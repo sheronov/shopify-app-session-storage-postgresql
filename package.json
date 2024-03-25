@@ -14,7 +14,11 @@
   "license": "MIT",
   "main": "./build/cjs/postgresql.js",
   "types": "./build/ts/postgresql.d.ts",
-  "scripts": {},
+  "scripts": {
+    "build": "loom build",
+    "test": "loom test",
+    "lint": "loom lint"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -42,8 +46,13 @@
   },
   "devDependencies": {
     "@shopify/eslint-plugin": "^42.1.0",
+    "@shopify/loom": "^1.0.2",
+    "@shopify/loom-cli": "^1.1.0",
+    "@shopify/loom-plugin-build-library": "^1.0.3",
+    "@shopify/loom-plugin-eslint": "^2.0.1",
+    "@shopify/loom-plugin-jest": "^1.0.2",
+    "@shopify/loom-plugin-prettier": "^2.0.1",
     "@shopify/prettier-config": "^1.1.2",
-    "@shopify/shopify-app-session-storage-test-utils": "^0.1.10",
     "@types/jest": "^29.5.1",
     "@types/pg": "^8.6.6",
     "eslint": "^8.40.0",
